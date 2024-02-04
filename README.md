@@ -1,12 +1,10 @@
 # Nomad coder Python Challeng Final Project
 
 # 만들게된 계기 / 만든 시간
-바닐라 챌린지 최종 과제(총 1일 소요)
+파이썬 챌린지 최종 과제(총 1일 소요)
 
 ## 수행한 조건
 
-1. 실시간 시계
-2. 로컬 스토리지를 사용한 로그인
-3. 로컬 스토리지를 사용한 투두리스트
-4. 랜덤 배경 이미지
-5. 날씨와 위치 (geolocation)
+1. flask 구현
+2. 유저가 검색한 키워드를 이용해 총 3개의 사이트를 크롤링해 값을 출력할 것
+3. beautifulsoup4, requests, playwright사용
