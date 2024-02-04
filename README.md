@@ -12,4 +12,4 @@
 ## 애로사항
 
 1. 결과값이 많을 시 크롤링에 너무 오랜 시간이 걸려 웹사이트 로딩이 오래걸린다.
-2. 동적 웹페이지 크롤링에 약해 custom tag가 존재하는 [web3](https://web3.career)https://web3.career에 큰 어려움을 겪었음.
+2. 동적 웹페이지 크롤링에 약해 custom tag가 존재하는 [web3](https://web3.career)https://web3.career 에 큰 어려움을 겪었음.
