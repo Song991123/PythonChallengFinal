@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #company::before{
+            color: #ff5e22;
+            content: "// ";
+        }
+        #company{
+            color: #696874;
+        }
+        h2{
+            color: #ff5e22;
+        }
+        .job{
+            margin: 20px 0px;
+        }
+        a{
+            text-decoration-line: none;
+            color:#848391;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Results for "{{keyword}}" : </h1>
+    <hr>
+    <div id="berlin">
+        <h2>berlin</h2>
+        {%for berlinJob in berlinJobs %}
+            <div class="job">
+                <b><span>{{berlinJob.job}}</span></b><br>
+                <span id="company">{{berlinJob.company}}</span><br>
+                <span>{{berlinJob.description}}</span>  
+                <span><a href={{berlinJob.joblink}}>{{berlinJob.joblink}}</a></span>            
+            </div>
+        {% endfor%}
+    </div>
+    <div id="wwr">
+        <h2>weworkremotely</h2>
+        {%for wwrJob in wwrJobs %}
+        <div class="job">
+            <b><span>{{wwrJob.title}}</span></b><br>
+            <span id="company">{{wwrJob.company}}</span><br>
+            <span>{{wwrJob.position}}</span> / 
+            <span>{{wwrJob.region}}</span>            
+        </div>
+        {% endfor%}
+    </div>
+    <div id="web3">
+        <h2>web3.career</h2>
+        {%for web3Job in web3Jobs%}
+        <div class="job">
+            <b><span>{{web3Job.title}}</span></b><br>
+            <span id="company">{{web3Job.company}}</span><br>
+            <span>{{web3Job.compensation}}</span> / 
+            <span>{{web3Job.location}}</span>            
+        </div>
+        {% endfor%}
+    </div>
+</body>
+</html>
